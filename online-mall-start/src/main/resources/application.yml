@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: online-mall-start
+  profiles:
+    active: dev

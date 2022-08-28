@@ -81,33 +81,16 @@
     </dependencies>
   </dependencyManagement>
 
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>https://maven.aliyun.com/repository/central</url>
+      <name>aliyun</name>
+    </repository>
+  </repositories>
 
   <build>
     <plugins>
-      <plugin>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>3.3.0</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>3.0.0</version>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -118,30 +101,6 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>${spring.boot.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <mainClass>com.kevin.online.mall.OnlineMallApplication</mainClass>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
-
-  <repositories>
-    <repository>
-      <id>central</id>
-      <url>https://maven.aliyun.com/repository/central</url>
-      <name>aliyun</name>
-    </repository>
-  </repositories>
-
 </project>

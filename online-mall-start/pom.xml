@@ -13,6 +13,7 @@
 
   <artifactId>online-mall-start</artifactId>
   <name>online-mall-start</name>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
 
@@ -38,9 +39,26 @@
       <artifactId>spring-boot-test</artifactId>
       <scope>test</scope>
     </dependency>
-
-
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.kevin.online.mall.OnlineMallApplication</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
