@@ -3,6 +3,8 @@
 
 1. Java11
 2. Spring Cloud Alibaba
+* Nacos 1.4.3
+3. 
 
 # 二、构建
 

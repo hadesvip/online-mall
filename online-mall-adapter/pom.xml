@@ -12,7 +12,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>online-mall-adapter</artifactId>
-  <version>1.0</version>
+  <version>${online-mall-adapter.version}</version>
   <packaging>jar</packaging>
 
   <name>online-mall-adapter</name>

@@ -14,7 +14,12 @@
     <spring.boot.version>2.6.3</spring.boot.version>
     <spring.cloud.dependencies.version>2021.0.1</spring.cloud.dependencies.version>
     <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
-    <lombok.version>1.18.24</lombok.version>
+    <online-mall-bom.version>1.0</online-mall-bom.version>
+
+    <!--modules version-->
+    <online-mall-adapter.version>1.0</online-mall-adapter.version>
+    <online-mall-common.version>1.0</online-mall-common.version>
+    <online-mall-order-service.version>1.0</online-mall-order-service.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -24,6 +29,9 @@
   <modules>
     <module>online-mall-adapter</module>
     <module>online-mall-start</module>
+    <module>online-mall-common</module>
+    <module>online-mall-order-service</module>
+    <module>online-mall-bom</module>
   </modules>
 
   <dependencyManagement>
@@ -53,6 +61,14 @@
       </dependency>
 
       <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>online-mall-bom</artifactId>
+        <version>${online-mall-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
         <version>${spring.boot.version}</version>
@@ -64,17 +80,16 @@
         <version>${spring.boot.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>${lombok.version}</version>
-      </dependency>
-
       <!--Project Modules-->
       <dependency>
         <groupId>com.kevin</groupId>
         <artifactId>online-mall-adapter</artifactId>
-        <version>1.0</version>
+        <version>${online-mall-adapter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>online-mall-common</artifactId>
+        <version>${online-mall-common.version}</version>
       </dependency>
 
 
