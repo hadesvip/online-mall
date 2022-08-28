@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class WelcomeController {
 
 
-  @GetMapping("/")
+  @GetMapping("/welcome")
   @ResponseBody
-  public String start() {
+  public String welcome() {
     return "online-mall application start success!";
   }
 

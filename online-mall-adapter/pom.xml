@@ -6,14 +6,14 @@
   <parent>
     <artifactId>online-mall</artifactId>
     <groupId>com.kevin</groupId>
-    <version>${reversion}</version>
+    <version>1.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.kevin</groupId>
   <artifactId>online-mall-adapter</artifactId>
-  <version>${parent.version}</version>
+  <version>${project.parent.version}</version>
+  <packaging>jar</packaging>
 
   <name>online-mall-adapter</name>
 

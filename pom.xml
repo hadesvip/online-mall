@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.kevin</groupId>
   <artifactId>online-mall</artifactId>
-  <version>${reversion}</version>
+  <version>1.0</version>
   <name>online-mall</name>
 
   <packaging>pom</packaging>
+
   <properties>
-    <reversion>1.0</reversion>
     <spring.boot.version>2.6.3</spring.boot.version>
     <spring.cloud.dependencies.version>2021.0.1</spring.cloud.dependencies.version>
     <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
@@ -69,27 +69,45 @@
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
       </dependency>
+
+      <!--Project Modules-->
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>online-mall-adapter</artifactId>
+        <version>1.0</version>
+      </dependency>
+
+
     </dependencies>
   </dependencyManagement>
 
 
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-
-
   <build>
     <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.4.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -104,6 +122,16 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${spring.boot.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.kevin.online.mall.OnlineMallApplication</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>

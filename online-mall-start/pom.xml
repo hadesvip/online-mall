@@ -18,15 +18,9 @@
 
   <dependencies>
 
-    <!--    <dependency>-->
-    <!--      <groupId>org.mybatis.spring.boot</groupId>-->
-    <!--      <artifactId>mybatis-spring-boot-starter</artifactId>-->
-    <!--    </dependency>-->
-
     <dependency>
       <groupId>com.kevin</groupId>
       <artifactId>online-mall-adapter</artifactId>
-      <version>${parent.version}</version>
     </dependency>
 
     <dependency>
