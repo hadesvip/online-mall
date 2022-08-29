@@ -10,9 +10,9 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>online-mall-order-service</artifactId>
-  <name>online-mall-order-service</name>
-  <version>${online-mall-order-service.version}</version>
+  <artifactId>online-mall-order</artifactId>
+  <name>online-mall-order</name>
+  <version>${online-mall-order.version}</version>
   <packaging>pom</packaging>
 
 

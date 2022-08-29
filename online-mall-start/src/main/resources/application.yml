@@ -1,5 +1,13 @@
 spring:
   application:
-    name: online-mall-start
+    name: online-mall-adapter
   profiles:
     active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:152.136.226.157}:${NACOS_PORT:8848}
+      username: nacos
+      password: nacos
+server:
+  port: 8080
