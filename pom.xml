@@ -20,6 +20,8 @@
     <online-mall-adapter.version>1.0</online-mall-adapter.version>
     <online-mall-common.version>1.0</online-mall-common.version>
     <online-mall-order.version>1.0</online-mall-order.version>
+    <online-mall-user-adapter.version>1.0</online-mall-user-adapter.version>
+
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -27,11 +29,12 @@
   </properties>
 
   <modules>
+    <module>online-mall-bom</module>
     <module>online-mall-adapter</module>
     <module>online-mall-start</module>
     <module>online-mall-common</module>
     <module>online-mall-order</module>
-    <module>online-mall-bom</module>
+    <module>online-mall-user</module>
   </modules>
 
   <dependencyManagement>
@@ -92,7 +95,11 @@
         <version>${online-mall-common.version}</version>
       </dependency>
 
-
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>online-mall-user-adapter</artifactId>
+        <version>${online-mall-user-adapter.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

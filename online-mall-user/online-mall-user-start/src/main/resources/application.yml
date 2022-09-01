@@ -1,6 +1,6 @@
 spring:
   application:
-    name: online-mall
+    name: online-mall-user
   profiles:
     active: dev
   cloud:
@@ -10,4 +10,4 @@ spring:
       username: nacos
       password: nacos
 server:
-  port: 8080
+  port: 8081
