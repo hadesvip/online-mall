@@ -1,6 +1,7 @@
 package com.kevin.online.mall.common.web.configuration;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +25,7 @@ public class RestTemplateConfiguration {
     RestTemplate restTemplate = new RestTemplate(factory);
     // UTF-8编码设置
     restTemplate.getMessageConverters().set(1,
-        new StringHttpMessageConverter(Charset.forName("UTF-8")));
+        new StringHttpMessageConverter(StandardCharsets.UTF_8));
     return restTemplate;
 
   }

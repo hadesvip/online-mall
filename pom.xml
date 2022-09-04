@@ -20,7 +20,9 @@
     <online-mall-adapter.version>1.0</online-mall-adapter.version>
     <online-mall-common.version>1.0</online-mall-common.version>
     <online-mall-order.version>1.0</online-mall-order.version>
+    <online-mall-user.version>1.0</online-mall-user.version>
     <online-mall-user-adapter.version>1.0</online-mall-user-adapter.version>
+    <online-mall-order-start.version>1.0</online-mall-order-start.version>
 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,12 +95,6 @@
         <groupId>com.kevin</groupId>
         <artifactId>online-mall-common</artifactId>
         <version>${online-mall-common.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.kevin</groupId>
-        <artifactId>online-mall-user-adapter</artifactId>
-        <version>${online-mall-user-adapter.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

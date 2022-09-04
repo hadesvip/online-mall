@@ -7,11 +7,12 @@
     <artifactId>online-mall</artifactId>
     <groupId>com.kevin</groupId>
     <version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
-
   <modelVersion>4.0.0</modelVersion>
   <artifactId>online-mall-user</artifactId>
   <name>online-mall-user</name>
+  <version>1.0</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -24,6 +25,16 @@
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.kevin</groupId>
+        <artifactId>online-mall-user-adapter</artifactId>
+        <version>${online-mall-user-adapter.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
