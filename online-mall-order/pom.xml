@@ -13,7 +13,7 @@
 
   <artifactId>online-mall-order</artifactId>
   <name>online-mall-order</name>
-  <version>${online-mall-order.version}</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -41,13 +41,7 @@
       <dependency>
         <artifactId>online-mall-order-adapter</artifactId>
         <groupId>com.kevin</groupId>
-        <version>${online-mall-order.version}</version>
-      </dependency>
-
-      <dependency>
-        <artifactId>online-mall-order-start</artifactId>
-        <groupId>com.kevin</groupId>
-        <version>${online-mall-order-start.version}</version>
+        <version>${online-mall-order-adapter.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
