@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>online-mall</artifactId>
+    <groupId>com.kevin</groupId>
+    <version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>online-mall-goods</artifactId>
+
+  <name>online-mall-goods</name>
+  <modules>
+    <module>online-mall-goods-start</module>
+    <module>online-mall-goods-adapter</module>
+  </modules>
+  <packaging>pom</packaging>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>com.kevin</groupId>
+      <artifactId>online-mall-common</artifactId>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>online-mall-goods-adapter</artifactId>
+        <groupId>com.kevin</groupId>
+        <version>${online-mall-goods-adapter.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

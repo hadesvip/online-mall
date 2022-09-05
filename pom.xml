@@ -25,6 +25,7 @@
     <online-mall-order-adapter.version>1.0</online-mall-order-adapter.version>
     <online-mall-order-start.version>1.0</online-mall-order-start.version>
     <online-mall-shopcart-adapter.version>1.0</online-mall-shopcart-adapter.version>
+    <online-mall-goods-adapter.version>1.0</online-mall-goods-adapter.version>
 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,6 +41,7 @@
     <module>online-mall-order</module>
     <module>online-mall-user</module>
     <module>online-mall-shopcart</module>
+    <module>online-mall-goods</module>
   </modules>
 
   <dependencyManagement>
