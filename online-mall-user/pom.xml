@@ -21,6 +21,7 @@
     <module>online-mall-user-domain</module>
     <module>online-mall-user-app</module>
     <module>online-mall-user-infrastructure</module>
+    <module>online-mall-user-client</module>
   </modules>
 
   <properties>
