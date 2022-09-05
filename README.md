@@ -1,4 +1,4 @@
-# online-mall
+# online-mall（领域驱动设计实践）
 ## 一、技术栈
 * Java11
 * Spring Cloud Alibaba 

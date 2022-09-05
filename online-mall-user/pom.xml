@@ -18,6 +18,9 @@
   <modules>
     <module>online-mall-user-start</module>
     <module>online-mall-user-adapter</module>
+    <module>online-mall-user-domain</module>
+    <module>online-mall-user-app</module>
+    <module>online-mall-user-infrastructure</module>
   </modules>
 
   <properties>

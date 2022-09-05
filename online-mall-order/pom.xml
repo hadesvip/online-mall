@@ -19,6 +19,9 @@
   <modules>
     <module>online-mall-order-adapter</module>
     <module>online-mall-order-start</module>
+    <module>online-mall-order-app</module>
+    <module>online-mall-order-domain</module>
+    <module>online-mall-order-infrastructure</module>
   </modules>
 
   <dependencies>

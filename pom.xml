@@ -24,6 +24,7 @@
     <online-mall-order-adapter.version>1.0</online-mall-order-adapter.version>
     <online-mall-shopcart-adapter.version>1.0</online-mall-shopcart-adapter.version>
     <online-mall-goods-adapter.version>1.0</online-mall-goods-adapter.version>
+    <online-mall-goods-client.version>1.0</online-mall-goods-client.version>
 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -91,6 +92,12 @@
         <groupId>com.kevin</groupId>
         <artifactId>online-mall-common</artifactId>
         <version>${online-mall-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>online-mall-goods-client</artifactId>
+        <groupId>com.kevin</groupId>
+        <version>${online-mall-goods-client.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

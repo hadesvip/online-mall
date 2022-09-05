@@ -18,6 +18,9 @@
   <modules>
     <module>online-mall-shopcart-start</module>
     <module>online-mall-shopcart-adapter</module>
+    <module>online-mall-shopcart-client</module>
+    <module>online-mall-shopcart-domain</module>
+    <module>online-mall-shopcart-infrastructure</module>
   </modules>
 
   <properties>

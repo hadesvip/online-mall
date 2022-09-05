@@ -12,13 +12,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>online-mall-goods</artifactId>
-
   <name>online-mall-goods</name>
+  <packaging>pom</packaging>
+
   <modules>
     <module>online-mall-goods-start</module>
     <module>online-mall-goods-adapter</module>
+    <module>online-mall-goods-client</module>
+    <module>online-mall-goods-app</module>
+    <module>online-mall-goods-domain</module>
+    <module>online-mall-goods-infrastructure</module>
   </modules>
-  <packaging>pom</packaging>
 
 
   <dependencies>
