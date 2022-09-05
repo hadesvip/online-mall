@@ -21,6 +21,7 @@
     <module>online-mall-shopcart-client</module>
     <module>online-mall-shopcart-domain</module>
     <module>online-mall-shopcart-infrastructure</module>
+    <module>online-mall-shopcart-app</module>
   </modules>
 
   <properties>

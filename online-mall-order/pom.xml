@@ -22,6 +22,7 @@
     <module>online-mall-order-app</module>
     <module>online-mall-order-domain</module>
     <module>online-mall-order-infrastructure</module>
+    <module>online-mall-order-client</module>
   </modules>
 
   <dependencies>

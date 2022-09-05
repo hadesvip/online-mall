@@ -11,9 +11,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>online-mall-shopcart-client</artifactId>
-  <name>online-mall-shopcart-client</name>
+  <artifactId>online-mall-shopcart-app</artifactId>
+  <name>online-mall-shopcart-app</name>
   <version>1.0</version>
-
   <packaging>jar</packaging>
+
+
 </project>
