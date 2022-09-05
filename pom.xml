@@ -17,13 +17,11 @@
     <online-mall-bom.version>1.0</online-mall-bom.version>
 
     <!--modules version-->
-    <online-mall-adapter.version>1.0</online-mall-adapter.version>
     <online-mall-common.version>1.0</online-mall-common.version>
     <online-mall-order.version>1.0</online-mall-order.version>
     <online-mall-user.version>1.0</online-mall-user.version>
     <online-mall-user-adapter.version>1.0</online-mall-user-adapter.version>
     <online-mall-order-adapter.version>1.0</online-mall-order-adapter.version>
-    <online-mall-order-start.version>1.0</online-mall-order-start.version>
     <online-mall-shopcart-adapter.version>1.0</online-mall-shopcart-adapter.version>
     <online-mall-goods-adapter.version>1.0</online-mall-goods-adapter.version>
 
@@ -35,8 +33,6 @@
 
   <modules>
     <module>online-mall-bom</module>
-    <module>online-mall-adapter</module>
-    <module>online-mall-start</module>
     <module>online-mall-common</module>
     <module>online-mall-order</module>
     <module>online-mall-user</module>
@@ -91,11 +87,6 @@
       </dependency>
 
       <!--Project Modules-->
-      <dependency>
-        <groupId>com.kevin</groupId>
-        <artifactId>online-mall-adapter</artifactId>
-        <version>${online-mall-adapter.version}</version>
-      </dependency>
       <dependency>
         <groupId>com.kevin</groupId>
         <artifactId>online-mall-common</artifactId>
