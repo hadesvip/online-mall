@@ -4,26 +4,21 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>online-mall-order</artifactId>
+    <artifactId>online-mall-shopcart</artifactId>
     <groupId>com.kevin</groupId>
     <version>1.0</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>online-mall-order-start</artifactId>
-  <name>online-mall-order-start</name>
-  <version>1.0</version>
+  <artifactId>online-mall-shopcart-start</artifactId>
+  <name>online-mall-shopcart-start</name>
   <packaging>jar</packaging>
-
-  <properties>
-    <start-class>com.kevin.online.mall.order.OnlineMallOrderApplication</start-class>
-  </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.kevin</groupId>
-      <artifactId>online-mall-order-adapter</artifactId>
+      <artifactId>online-mall-shopcart-adapter</artifactId>
     </dependency>
 
     <dependency>
@@ -67,10 +62,12 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <mainClass>com.kevin.online.mall.shop.cart.OnlineMallShopCartApplication</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>
-
 
 
 </project>
