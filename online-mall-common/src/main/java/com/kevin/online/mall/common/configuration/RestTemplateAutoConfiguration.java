@@ -1,7 +1,7 @@
-package com.kevin.online.mall.common.web.configuration;
+package com.kevin.online.mall.common.configuration;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,16 +11,17 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * restTemplate配置
+ * 自动配置 RestTemplate
  *
  * @author kevin
  */
-//@Configuration
-public class RestTemplateConfiguration {
+@Configuration(proxyBeanMethods = false)
+public class RestTemplateAutoConfiguration {
 
 
   @LoadBalanced
   @Bean
+  @ConditionalOnMissingBean
   public RestTemplate restTemplate(ClientHttpRequestFactory factory) {
     RestTemplate restTemplate = new RestTemplate(factory);
     // UTF-8编码设置
@@ -39,6 +40,5 @@ public class RestTemplateConfiguration {
     factory.setConnectTimeout(5 * 1000);
     return factory;
   }
-
 
 }
