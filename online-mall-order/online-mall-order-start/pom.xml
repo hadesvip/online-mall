@@ -23,7 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>com.kevin</groupId>
-      <artifactId>online-mall-order-adapter</artifactId>
+      <artifactId>online-mall-order-app</artifactId>
     </dependency>
 
     <dependency>
